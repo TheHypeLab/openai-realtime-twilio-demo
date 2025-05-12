@@ -5,17 +5,13 @@
   "scripts": {
     "dev:webapp": "cd webapp && npm run dev",
     "dev:server": "cd websocket-server && npm run dev",
-    "dev": "concurrently \"npm run dev:webapp\" \"npm run dev:server\"",
-    "install:all": "npm install && cd webapp && npm install && cd ../websocket-server && npm install"
+    "dev": "echo 'Please run npm run dev:webapp and npm run dev:server in separate terminals'"
   },
-  "keywords": [
-    "openai",
-    "twilio",
-    "realtime"
-  ],
   "author": "",
   "license": "MIT",
-  "dependencies": {
-    "concurrently": "^8.2.2"
-  }
+  "private": true,
+  "workspaces": [
+    "webapp",
+    "websocket-server"
+  ]
 }
