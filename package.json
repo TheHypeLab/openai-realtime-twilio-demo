@@ -1,0 +1,21 @@
+{
+  "name": "openai-realtime-twilio",
+  "version": "1.0.0",
+  "description": "OpenAI Realtime API with Twilio Quickstart",
+  "scripts": {
+    "dev:webapp": "cd webapp && npm run dev",
+    "dev:server": "cd websocket-server && npm run dev",
+    "dev": "concurrently \"npm run dev:webapp\" \"npm run dev:server\"",
+    "install:all": "npm install && cd webapp && npm install && cd ../websocket-server && npm install"
+  },
+  "keywords": [
+    "openai",
+    "twilio",
+    "realtime"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
